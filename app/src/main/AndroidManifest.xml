@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="gjcm.kxf.bluetoothdemo">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name="com.inuker.bluetooth.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="gjcm.kxf.bule.MyPrintActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="gjcm.kxf.bule.EndTest"/>
+        <activity android:name="gjcm.kxf.bule.PrintDataActivity"/>
+
+        <activity android:name="com.inuker.bluetooth.DeviceDetailActivity" />
+
+        <activity android:name="com.inuker.bluetooth.CharacterActivity" />
+
+        <activity android:name="com.inuker.bluetooth.TestActivity2" />
+    </application>
+
+</manifest>
